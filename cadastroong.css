@@ -1,0 +1,224 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap');
+
+*, *:before, *:after { 
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+}
+*{
+    margin: 0;
+    padding: 0;
+    outline: none;
+    box-sizing: border-box;
+}
+body{
+    height: 100vh;
+    width: 100%;
+    background-repeat: repeat;
+    background: #00B4DB; 
+    background: -webkit-linear-gradient(to left, #0083B0, #00B4DB);  
+    background: linear-gradient(to left, #0083B0, #00B4DB);
+}
+
+header{
+    display: flex;
+    justify-content: center;
+}
+
+.Container{
+    display: flex;
+    justify-content: space-between;
+    margin: 0;
+    width: 100%;
+}
+
+.logo img{
+    width: 350px;
+}
+
+.menu{
+    display: flex;
+    align-items: center;
+    padding-right: 0px;
+    font-size: 20px;
+}
+
+nav ul, nav li{
+    list-style: none;
+}
+nav ul{
+    display: flex;
+    padding: 10px;
+}
+nav a {
+    color:white;
+    text-decoration: none;
+    padding: 10px;
+}
+nav a :hover{
+    transform: scale(1.1);
+    transition-duration: 200ms;
+    transition-delay: 5ms;
+    text-shadow: 0px 0px 14px #e5e5e5;
+}
+
+.center{
+    width: 700px; 
+    margin-left: auto;
+    margin-right: auto;
+    background-color: white;
+    padding: 30px;
+    border-radius: 25px;
+}
+
+.container{
+    position: absolute;
+    background: #fbfefb;
+    width: 450px;
+    padding: 30px;
+    box-shadow: 0px 0px 50px #423f3e9a;
+}
+.container{
+    border-radius: 10px;
+}
+.titulo{
+    font-size: 40px;
+    font-weight: 600;
+    text-align: center;
+}
+
+
+/* 
+.container form{
+    margin-top: -5px;
+}
+.container form .data{
+    height: 45px;
+    width: 100%;
+    margin: 30px 0;
+}
+form .data label{
+    font-size: 15px;
+}
+form .data input{
+    height: 100%;
+    width: 100%;
+    padding-left: 10px;
+    font-size: 20px;
+    border:  1px solid silver;
+}
+form .data input:focus{
+    border-color: #0083B0;
+    border-bottom-width: 2px;
+}
+form .forgot-pass{
+    margin-top: 10px;
+}
+form .forgot-pass a{
+    color: #0083B0;
+    text-decoration: none;
+}
+form .forgot-pass a:hover{
+    text-decoration: underline;
+    text-shadow: 0px 0px 14px #acacac83;
+}
+
+form .btn{
+    margin:  30px 0;
+    height: 45px;
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+}
+form .btn .inner{
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    left: -100%;
+    z-index: -5;
+}
+form .btn:hover .inner{
+    left: 0;
+}
+form .btn button{
+    height: 100%;
+    width: 100%;
+    background: none;
+    border: none;
+    color: black;
+    font-size: 18px;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing:  1px;
+    cursor: pointer;
+}
+.singup-link{
+    text-align: center;
+}
+.singup-link a{
+    text-decoration: none;
+}
+#acessar a{
+    color: black;
+    text-decoration: none;
+}
+
+#acessar a:hover{
+    font-size: 20px;
+    text-shadow: 0px 0px 14px #acacac83;
+    transition-duration: 200ms;
+    transition-delay: 5ms;
+} */
+
+
+
+
+/* body {
+    font-family: 'Poppins',sans-serif;
+    padding: 100px;
+    background: rgb(9,45,159);
+    background: linear-gradient(-80deg, rgba(9,45,159,1) 20%, rgba(103,244,255,1) 80%)
+} */
+
+/* removendo as setinhas do input que envolve number(numeros) */
+/* input[type=number]::-webkit-inner-spin-button { 
+    -webkit-appearance: none;
+}
+input[type=number] { 
+    -moz-appearance: textfield;
+    appearance: textfield;
+} */
+
+/* organizando os dois cadastros um do lado do outro */
+/* .container{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.cadastro{
+    display: flex;
+    justify-content: center;
+    background-color: white;
+    width: 500px;
+    height: 500px;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.endereco{
+    text-align: center;
+    background-color: white;
+    width: 500px;
+    height: 500px;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.titulo {
+    margin-left: 7%;
+}
+
+.subtitulo {
+    margin-left: 10%;
+    margin-top: 20px;
+} */

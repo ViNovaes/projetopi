@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="cadastroong.css">
+    <title>Cadastro de ONG</title>
+</head>
+<body>
+
+    <header>
+        <div class="Container">
+            <div class="logo">
+                <img src="./assets/images/logotipo_sem_ONG- sem fundo.png">
+            </div> 
+            <div class="menu">
+                <nav>
+                    <ul>
+                        <a href="../PGinicial.html"><li>Voltar</li></a>
+                        <a href=""><li>Projetos</li></a>
+                        <a href=""><li>Loja</li></a>
+                        <a href=""><li>Sobre</li></a>
+                        <a href=""><li>Contato</li></a>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+        <div class="center">
+                <form>
+            <br>
+                <h1 class="titulo">Cadastro de ONG´s</h1>
+                <p class="subtitulo">Preencha com as informações de sua ONG</p> 
+
+            <br>
+                <label for="name">Nome da ONG</label>
+                <input type="text" id="nomeong" name="nomeong" required="required">
+            <br>
+                <label for="email">Email da ONG</label>
+                <input type="text" id="emailcadastro" name="emailcadastro" required="required">
+            <br>
+                <label for="password">Senha</label>
+                <input type="password" id="senhaUsuario" required="required">
+            <br>
+                <label for="number">Telefone da ONG</label>
+                <input type="number" id="telefoneONG" required="required">
+            <br>
+                <label for="number">CNPJ da ONG</label>
+                <input type="number" id="cnpjONG">
+            <br>
+                <label for="text">Sobre a ONG e seus projetos</label>
+            <br>
+                <textarea name="" id="" cols="50" rows="5">Escreva sobre sua ONG, projetos que a envolvam e outros.</textarea>
+            <br>
+                <label for="text">Classificação da ONG</label>
+                <select name="classificacaoONG" id="classificacao" required="required">
+                    <option value="null">selecione a classificação da sua ONG</option>
+                    <option value="cla">Cultura, Lazer & Arte</option>
+                    <option value="pma">Preservação ao Meio Ambiente</option>
+                    <option value="dq">Dependentes quimicos</option>
+                    <option value="vcm">Violencia contra a mulher</option>
+                    <option value="clgbtqiap">Comunidade LGBTQIAP+</option>
+                    <option value="cf">Combate A fome</option>
+                    <option value="cp">Combate A Pobreza</option>
+                    <option value="c">Crianças</option>
+                    <option value="e">Educação</option>
+                    <option value="er">Equidade Racial</option>
+                    <option value="esportes">Esportes</option>
+                    <option value="idoso">Idoso</option>
+                </select>
+            <br>
+                <label for="image">Logo da ONG</label>
+            <br>
+                <form action="fileupload.php" enctype="multipart/form-data" method="post"><label class="custom-uploader" for="file"></label> <input id="file" accept="image/jpeg,image/gif,image/png,application/pdf,image/x-eps" name="fileToUpload" type="file" /></form>
+
+            <br>
+            <br>
+
+            <h1 class="titulo"><label>Endereço</label></h1>
+            <br>
+                <label>Cep:
+                <input name="cep" type="text" id="cep" value=""
+                    onblur="pesquisacep(this.value);" /></label>
+            <br>
+                <label>Rua:
+                <input name="rua" type="text" id="rua" /></label>
+            <br>
+                <label>Numero:
+                <input name="ibge" type="text" id="ibge" /></label>
+            <br/>
+                <label>Bairro:
+                <input name="bairro" type="text" id="bairro" /></label>
+            <br/>
+                <label>Cidade:
+                <input name="cidade" type="text" id="cidade" /></label>
+            <br/>
+                <label>Estado:
+                <input name="uf" type="text" id="uf" /></label>
+            <br>
+
+            <br>
+            <br>
+
+            <h1 class="titulo">Redes Sociais</h1>
+<br>
+            <label for="">Website: </label>
+            <input type="text">
+            <br>
+            <label for="">Facebook: </label>
+            <input type="text">
+            <br>
+            <label for="">Twitter: </label>
+            <input type="text">
+            <br>
+            <label for="">Instagram: </label>
+            <input type="text">
+        </form>
+<br>
+
+        </div>
+
+
+    <script src="./assets/JS/cadastroong.js"></script>
+</body>
+</html>
+
+
+

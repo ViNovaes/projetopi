@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./assets/CSS/style.css"/>
+</head>
+<body>
+    
+    <header>
+        <div class="Container">
+            <div class="logo">
+                <a href="../index.html"><img src="./assets/images/logotipo_sem_ONG- sem fundo.png" width="450px"></a>
+            </div> 
+            <aside>
+                <div onclick="menu()" id="menu-opener"> 
+                    <img src="./assets/images/menu_FILL0_wght400_GRAD0_opsz48.png" width="50">
+                </div>
+                <div id="menu-area">
+                    <ul>
+                        <a href="../index.html"><li>Inicio</li></a>
+                        <li>Sobre</li>
+                        <li>Contato</li>
+                    </ul>
+                </div>
+            </aside>
+        </div>
+    </header>
+    <div class="container" >
+        <a class="links" id="paracadastro"></a>
+        <a class="links" id="paralogin"></a>
+        
+        <div class="content">      
+        <!--FORMULÁRIO DE LOGIN-->
+        <div id="login">
+            <form method="post" action="">
+            <h1>LOGIN</h1> 
+            <p> 
+                <label for="email_login">e-mail</label>
+                <input id="email_login" name="email_login" required="required" type="text" placeholder="seuEmail@gmail.com"/>
+            </p>
+            
+            <p> 
+                <label for="senha_login">Senha</label>
+                <input id="senha_login" name="senha_login" required="required" type="password" placeholder="ex: 1234567890" /> 
+            </p>
+            
+            <p> 
+                <input type="checkbox" name="manterlogado" id="manterlogado" value="" /> 
+                <label for="manterlogado">Manter-me logado</label>
+                <p>
+                <input type="checkbox" name="ems" id="ems" value="" /> 
+                <label for="ems">Esqueci minha Senha</label>
+            </p>
+            
+            <p> 
+                <input type="submit" value="Logar" />
+            </p>
+            
+            <p class="link">
+                Ainda não tem conta?
+                <a href="#paracadastro">Cadastre-se</a>
+            </p>
+            </form>
+        </div>
+        <!--FORMULÁRIO DE CADASTRO-->
+        <div id="cadastro">
+            <form method="post" action="">
+            <h1>Cadastro</h1> 
+            
+            <p> 
+                <label for="nome_cad">Seu nome</label>
+                <input id="nome_cad" name="nome_cad" required="required" type="text" placeholder="Seu nome aqui" />
+            </p>
+            
+            <p> 
+                <label for="email_cad">e-mail</label>
+                <input id="email_cad" name="email_cad" required="required" type="email" placeholder="seuEmail@gmail.com"/> 
+            </p>
+            
+            <p> 
+                <label for="senha_cad">Senha</label>
+                <input id="senha_cad" name="senha_cad" required="required" type="password" placeholder="ex: 1234567890"/>
+            </p>
+            
+            <p> 
+                <input type="submit" value="Cadastrar"/> 
+            </p>
+            
+            <p class="link">  
+                Já tem conta?
+                <a href="#paralogin"> Ir para Login </a>
+            </p>
+            </form>
+        </div>
+        </div>
+    </div> 
+    <script src="./assets/JS/script.js"></script>
+</body>
+</html>
